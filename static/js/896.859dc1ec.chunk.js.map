@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/896.859dc1ec.chunk.js","mappings":"yJAEe,SAASA,IACtB,OACEC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,UAET,C","sources":["Orders.jsx"],"sourcesContent":["import React from 'react'\r\n\r\nexport default function Orders() {\r\n  return (\r\n    <div>Orders</div>\r\n  )\r\n}\r\n"],"names":["Orders","_jsx","children"],"sourceRoot":""}
