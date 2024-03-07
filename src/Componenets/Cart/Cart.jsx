@@ -11,7 +11,6 @@ import {
 import Loading from "../../Loading";
 import emptyimg from "../../assets/preview.png";
 import { Helmet } from "react-helmet";
-import Navbar from "../Navbar/Navbar";
 
 export default function Cart() {
   let { setIsOpen, isOpen } = useContext(userContext);
@@ -56,8 +55,8 @@ export default function Cart() {
     );
 
   return (
-    <div>
-      <Navbar></Navbar>
+   
+
     <aside
       className={data?.data?.numOfCartItems ? "main-color" : "#fff"}
       style={
@@ -216,6 +215,6 @@ export default function Cart() {
         )}
       </div>
     </aside>
-    </div>
+
   );
 }
