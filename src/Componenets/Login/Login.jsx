@@ -78,7 +78,7 @@ export default function Login() {
 
         {formik.errors.password && formik.touched.password ? <p className='alert alert-danger'>{formik.errors.password}</p> : ''}
 
-      <Link to={'forget'}>Forget PassWord?</Link>
+      <Link to={'/forget'}>Forget PassWord?</Link>
         <button disabled={!(formik.isValid && formik.dirty)} className='btn bg-green text-white ms-auto d-block' type='submit'>{
           loading ? <Bars
             height="20"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   deleteWish,
   getWish,
@@ -21,9 +21,14 @@ export default function WishList() {
   } = useCrudCart(addToCart);
 
   const handleRemove = async (id) => {
-    await mutate(id)  // Call the delete mutation
-    refetch(); // Refresh the wishlist after deletion
+    await mutate(id) 
+    refetch(); 
   };
+
+  useEffect(() => {
+   
+    getWish(); 
+  }, []);
 
   if (isLoading || deleteLoading) return <Loading />;
 
@@ -45,7 +50,7 @@ export default function WishList() {
               <p className="fw-bold text-main">{ele.price} EGP</p>
               <p
                 className="cursor-pointer text-danger"
-                onClick={() => handleRemove(ele.id)} // Call handleRemove function
+                onClick={() => handleRemove(ele.id)} 
               >
                 Remove <i className="fa-solid fa-trash  "></i>
               </p>

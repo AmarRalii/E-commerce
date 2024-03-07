@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { userContext } from "../../UserContext";
 import {
   checkout,
@@ -16,7 +16,7 @@ export default function Cart() {
   let { setIsOpen, isOpen } = useContext(userContext);
   let { data, isError, isLoading } = useGetCart("getCart", getCart);
 
-  let { mutate, data: deletedData } = useCrudCart(deleteCart);
+  let { mutate, data: deletedData , isLoading:cisloading} = useCrudCart(deleteCart);
   let { mutate: mutateupdate, data: updatedate } = useCrudCart(updateCart);
   let { mutate: mutatecheckout, data: checkoutdata } = useCrudCart(checkout);
 
@@ -40,7 +40,14 @@ export default function Cart() {
       window.location.href = checkoutdata?.data?.session?.url;
   }
 
+  useEffect(() => {
+    
+    getCart(); 
+  }, []);
+
   if (isLoading) return <Loading></Loading>;
+  
+  if (cisloading) return <Loading></Loading>;
 
   if (isError)
     return (

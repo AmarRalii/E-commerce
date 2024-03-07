@@ -29,7 +29,7 @@ export default function Brands() {
           <div className="col-md-3 gy-3" key={ele._id}>
             <Link to={`/singelbrand/${ele._id}`}>
               <div className="barnd text-center gy-2 p-2">
-                <img src={ele.image} alt="" />
+                <img src={ele.image} alt="" className="w-100"/>
                 <h2 className="fw-bold ">{ele.name}</h2>
               </div>
             </Link>

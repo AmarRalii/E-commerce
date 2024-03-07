@@ -45,6 +45,7 @@ export default function App() {
     {
       path: '', element: <Layout></Layout>, children: [
         { index: true, element: <Login></Login> },
+        { path: 'E-commerce/', element: <Login></Login> },
         { path: 'register', element: <Register></Register> },
         { path: 'allorders', element: <Suspense><Orders fallback={<Loading></Loading>}></Orders></Suspense> },
         { path: 'home', element: <ProtecetdRoute><Home></Home></ProtecetdRoute> },

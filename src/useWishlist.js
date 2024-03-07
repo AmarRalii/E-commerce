@@ -23,10 +23,6 @@ export function deleteWish(productId) {
 }
 
 
-
-
-
-
 export function getWish() {
     return axios.get(`https://route-ecommerce.onrender.com/api/v1/wishlist`, {
         headers: {
@@ -34,8 +30,6 @@ export function getWish() {
         }
     })
 }
-
-
 
 
 export function useGetWish(key, fn) {
