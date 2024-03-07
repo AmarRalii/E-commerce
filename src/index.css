@@ -37,7 +37,7 @@ a:hover {
   margin-left: 40px;
 }
 .navbar {
-  z-index: 99999999999999999999999999;
+  z-index: 999999999999999999999999999;
 }
 
 .product:hover .btn {

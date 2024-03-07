@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext,  useState } from "react";
 import { userContext } from "../../UserContext";
 import {
   checkout,
@@ -40,10 +40,7 @@ export default function Cart() {
       window.location.href = checkoutdata?.data?.session?.url;
   }
 
-  useEffect(() => {
-    
-    getCart(); 
-  }, []);
+ 
 
   if (isLoading) return <Loading></Loading>;
   
