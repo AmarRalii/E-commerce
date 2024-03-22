@@ -16,7 +16,6 @@ export default function SubCategory() {
   let { data: udata } = useProduct("singelCat", () =>
     featuredSingelCategory(id)
   );
-
   if (isLoading) return <Loading></Loading>;
 
   if (isError) return <h2 className="text-center">{error.message} </h2>;
@@ -34,6 +33,7 @@ export default function SubCategory() {
               key={ele._id}
             >
               <h4 className="fw-bold">{ele.name}</h4>
+              
             </div>
           ))}
         </div>

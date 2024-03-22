@@ -31,8 +31,12 @@ export default function WishList() {
   }, []);
 
   if (isLoading || deleteLoading) return <Loading />;
+  
+  if (cisLoading || deleteLoading) return <Loading />;
 
   if (isError) return <h2 className="text-center fw-bold">{error.message}</h2>;
+
+  if (cisError) return <h2 className="text-center fw-bold">{cerror.message}</h2>;
   
 
   console.log(data?.data?.data);

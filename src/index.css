@@ -37,7 +37,7 @@ a:hover {
   margin-left: 40px;
 }
 .navbar {
-  z-index: 999999999999999999999999999;
+  z-index: 98;
 }
 
 .product:hover .btn {
@@ -68,7 +68,7 @@ aside {
   top: 0;
   bottom: 0;
   right: -100%;
-  z-index: 99999;
+  z-index:8;
   overflow-y: auto;
 }
 
@@ -80,7 +80,7 @@ span.cart {
   background-color: var(--main-color);
 }
 
-/* profile */
+
 
 .cursor-pointer {
   cursor: pointer;
