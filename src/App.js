@@ -17,6 +17,8 @@ import WishList from './Componenets/Wishlist/WishList';
 import SubCategory from './SubCategory';
 import SingelBreand from './SingelBreand';
 import Forget from './Componenets/Forget';
+import ForgetPassword from './Componenets/ForgetPassword/ForgetPassword';
+import ResetPassword from './Componenets/ResetPassword/ResetPassword';
 // import Parent from './Componenets/Parent';
 
 
@@ -51,6 +53,8 @@ export default function App() {
         { path: 'home', element: <ProtecetdRoute><Home></Home></ProtecetdRoute> },
         { path: 'wishlist', element: <ProtecetdRoute><WishList></WishList></ProtecetdRoute> },
         { path: 'cart', element: <ProtecetdRoute> <Cart></Cart></ProtecetdRoute> },
+        { path: 'forgetPassword', element:  <ForgetPassword></ForgetPassword>},
+        { path: 'resetPassword', element:  <ResetPassword></ResetPassword>},
         { path: 'forget', element: <ProtecetdRoute> <Forget></Forget></ProtecetdRoute> },
         { path: 'categories', element: <ProtecetdRoute><Categories></Categories></ProtecetdRoute> },
         { path: 'products', element: <ProtecetdRoute><Suspense fallback={<Loading></Loading>}><Products></Products> </Suspense></ProtecetdRoute> },
