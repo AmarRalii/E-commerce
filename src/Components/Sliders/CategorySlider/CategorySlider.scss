@@ -1,0 +1,41 @@
+.CategorySlider{
+    .row{
+        img{
+            height: 10em;
+            object-fit: cover;
+        }
+    }
+}
+
+// Responsive For Category Slider 
+
+@media (max-width:760px){
+    .CategorySlider{
+        .row{
+            img{
+                height: 8em;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media (max-width:400px){
+    .CategorySlider{
+        .row{
+            img{
+                height: 5em;
+                object-fit: cover;
+            }
+        }
+    }
+}
+@media (max-width:260px){
+    .CategorySlider{
+        .row{
+            img{
+                height: 3em;
+                object-fit: cover;
+            }
+        }
+    }
+}

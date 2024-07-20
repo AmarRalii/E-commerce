@@ -1,0 +1,108 @@
+$main-color: #0aad0a;
+$light-color: #f0f3f2;
+$shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+  rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+  rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+$font-family: "Encode Sans Expanded", sans-serif;
+$rating-color: #ffc908;
+
+body {
+  font-family: var($font-family) !important;
+  overflow-x: hidden;
+  font-size: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+.col-md-3 {
+  .product {
+    position: relative;
+    height: 30em;
+    overflow: hidden;
+    i {
+      position: absolute;
+    }
+
+    img {
+      object-fit: cover;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    h2 {
+      color: $main-color;
+    }
+    button {
+      position: absolute;
+      bottom: -5em;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.4s;
+    }
+    .price-rating {
+      margin-top: 3em;
+    }
+  }
+  .product:hover {
+    box-shadow: $shadow;
+  }
+  .product:hover button {
+    bottom: 0;
+  }
+}
+
+// Responsive For Home Component
+
+@media (max-width: 992px) {
+  .col-md-3 {
+    width: 30% !important;
+    .product {
+      height: 26em;
+
+      i {
+        font-size: 20px !important;
+      }
+
+      
+      h2 {
+        color: $main-color;
+      }
+    }
+  }
+}
+@media (max-width: 770px) {
+  .col-md-3 {
+    width: 45% !important;
+    .product {
+      height: 28em;
+
+      i {
+        font-size: 20px !important;
+      }
+
+      
+      h2 {
+        color: $main-color;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .col-md-3 {
+    width: 80% !important;
+    .product {
+      height: 33em;
+
+      i {
+        font-size: 20px !important;
+      }
+
+      
+      h2 {
+        color: $main-color;
+      }
+    }
+  }
+}

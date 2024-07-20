@@ -1,0 +1,106 @@
+$main-color: #0aad0a;
+$light-color: #f0f3f2;
+$shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+  rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+  rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+$font-family: "Encode Sans Expanded", sans-serif;
+$rating-color: #ffc908;
+
+body {
+  font-family: var($font-family) !important;
+  overflow-x: hidden;
+  font-size: 10px;
+}
+
+
+.home-slider{
+    .row{
+      display: flex;
+      justify-content: center;
+        .col-md-9{
+            height: 400px;
+            width: 75%;
+            img{
+                height: 400px;
+            }
+        }
+        .col-md-4{
+          width: 25%;
+            img{
+                height: 200px;
+            }
+        }
+    }
+}
+
+// Responsive For Main Slider 
+
+@media (max-width:900px){
+  .home-slider{
+    .row{
+      display: flex;
+      justify-content: center;
+        .col-md-9{
+            height: 350px;
+            width: 70%;
+            img{
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+        .col-md-4{
+          width: 30%;
+            img{
+                height: 175px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+}
+@media (max-width:770px){
+  .home-slider{
+    .row{
+      display: flex;
+      justify-content: center;
+        .col-md-9{
+            height: 300px;
+            width: 70%;
+            img{
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+        .col-md-4{
+          width: 30%;
+            img{
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+}
+@media (max-width:400px){
+  .home-slider{
+    .row{
+      display: flex;
+      justify-content: center;
+        .col-md-9{
+            height: 200px;
+            width: 70%;
+            img{
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+        .col-md-4{
+          width: 30%;
+            img{
+                height: 100px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+}

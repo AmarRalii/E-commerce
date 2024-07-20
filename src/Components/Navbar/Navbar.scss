@@ -1,0 +1,51 @@
+$main-color: #0aad0a;
+$light-color: #f0f3f2;
+$shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+  rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+  rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+$font-family: "Encode Sans Expanded", sans-serif;
+$rating-color: #ffc908;
+
+body {
+  font-family: var($font-family) !important;
+  overflow-x: hidden;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.active {
+  font-weight: bolder !important;
+  color: #0aad0a !important;
+  border-radius: 15% !important;
+}
+.cartIcon{
+  position: relative;
+  color: $main-color;
+  span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 25px;
+    width:  25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+}
+
+.navbar-nav{
+  ul{
+    display: flex;
+    justify-content: space-around;
+    li{
+      text-decoration: none;
+      list-style: none;
+      cursor: pointer;
+    }
+  }
+}

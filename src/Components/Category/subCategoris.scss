@@ -1,0 +1,38 @@
+$main-color: #0aad0a;
+$light-color: #f0f3f2;
+$shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+  rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+  rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+$font-family: "Encode Sans Expanded", sans-serif;
+$rating-color: #ffc908;
+
+body {
+  font-family: var($font-family) !important;
+  overflow-x: hidden;
+  font-size: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.SubCategoris{
+    .container{
+        h2{
+            color: $main-color;
+        }
+        .row{
+           text-align: center;
+           display: flex;
+           justify-content: center;
+            .col-md-3{
+                 margin:  1em;
+                border: 1px solid $light-color;
+            }
+            .col-md-3:hover{
+                box-shadow: $shadow;
+                border: 1px solid $main-color;
+            }
+        }
+    }
+}

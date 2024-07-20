@@ -1,0 +1,129 @@
+$main-color: #0aad0a;
+$light-color: #f0f3f2;
+$shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+  rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+  rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+$font-family: "Encode Sans Expanded", sans-serif;
+$rating-color: #ffc908;
+
+.wish-list {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: #0aad0a;
+    }
+    .row {
+      display: flex;
+      background-color: #f0f3f2;
+      width: 100%;
+      .row {
+        .col-md-7 {
+          display: flex;
+          .col-md-4 {
+            img {
+              width: 75%;
+            }
+          }
+          .col-md-6 {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            h4 {
+              color: #0aad0a;
+            }
+          }
+        }
+        .col-md-5 {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          button {
+            width: 8em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Responsive for Wish List Component
+
+@media (max-width: 768px) {
+  .wish-list {
+    .container {
+      .row {
+        width: 100%;
+        .row {
+          display: flex;
+          .col-md-7 {
+            display: flex;
+
+            width: 70%;
+            .col-md-4 {
+              width: 10em;
+              img {
+                width: 100%;
+              }
+            }
+            .col-md-6 {
+              align-items: center;
+
+              h4 {
+                font-size: 20px;
+              }
+            }
+          }
+          .col-md-5 {
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 510px) {
+  .wish-list {
+    .container {
+      h2 {
+        color: #0aad0a;
+        font-size: 20px;
+      }
+      .row {
+        display: flex;
+
+        width: 100%;
+        .row {
+          .col-md-7 {
+            display: flex;
+            width: 100%;
+            .col-md-4 {
+              img {
+                width: 90%;
+              }
+            }
+            .col-md-6 {
+              h4 {
+                color: #0aad0a;
+                font-size: 15px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+          .col-md-5 {
+            align-items: center;
+            width: 100%;
+            button {
+              height: 2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

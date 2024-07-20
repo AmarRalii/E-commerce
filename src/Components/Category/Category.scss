@@ -1,0 +1,112 @@
+$main-color: #0aad0a;
+$light-color: #f0f3f2;
+$shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+  rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+  rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+$font-family: "Encode Sans Expanded", sans-serif;
+$rating-color: #ffc908;
+
+body {
+  font-family: var($font-family) !important;
+  overflow-x: hidden;
+  font-size: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.category{
+    .container{
+        .row{
+            h1{
+                color: $main-color !important;
+            }
+            .col-md-4{
+                img{
+                    width: 30em;
+                    height: 20em;
+                    object-fit: cover;
+                }
+                h3{
+                    color: $main-color;
+                    
+                }
+            }
+            .col-md-4:hover{
+                box-shadow: $shadow;
+            }
+        }
+    }
+}
+
+
+// Responsive for Category Component
+
+@media(max-width:992px){
+    .category{
+        .container{
+            .row{
+                
+                .col-md-4{
+                    width: 50%;
+                    img{
+                        width: 20em !important;
+                        height: 15em;
+                        object-fit: cover;
+                    }
+                    h3{
+                        color: $main-color;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .category{
+        .container{
+            .row{
+                
+                display: flex;
+                justify-content: space-around;
+                .col-md-4{
+                    width: 40%;
+                    img{
+                        width: 15em !important;
+                        height: 15em;
+                        object-fit: cover;
+                    }
+                    h3{
+                        color: $main-color;
+                        font-size: 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .category{
+        .container{
+            .row{
+                
+                
+                .col-md-4{
+                    width: 100%;
+                    img{
+                        width: 15em !important;
+                        height: 12em;
+                        object-fit: cover;
+                    }
+                    h3{
+                        color: $main-color;
+                        font-size: 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
